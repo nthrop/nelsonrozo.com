@@ -1,0 +1,737 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>cō designs</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Portfolio",
+        "headline": "Cognitive Psychology",
+        "datePublished": "2016-25-06T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+      </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=RalewayRaleway:300,300i,400,400i,500,500i|Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    
+    <style amp-custom>
+        
+        a:hover {
+            color: #ef4036;
+        }
+     
+        .about {
+            max-width: 700px;
+            margin: auto;
+        }
+        
+        .article-content {
+            margin: auto;
+        }
+        
+        body {
+            background-color: white;
+        }
+
+        body:before,
+
+        #top, body:after {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 55px;
+            z-index: 9999;
+            background-color: #ffffff;
+        }
+        
+        body:before{
+            content: '';
+            display: block;
+            z-index: 9997;
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        body:after {
+            content: '';
+            display: block;
+            position: absolute; /* this needs to scroll */
+            background-color: white; /* match background of body */
+            top: -4px;
+            height: 5px; /* covers height of :before shadow */ 
+            z-index: 9998; /* overlap :before, moves on scroll */
+        }
+        
+        .button1 {
+            float: right;
+            border: none;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+            padding: 10px 25px;
+            margin: 25px 15px;
+            background-color: #ef4036;
+            color: #ffffff;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0px 3px 10px grey;
+            -webkit-transition-duration: 0.2s; /* Safari */
+            transition-duration: 0.2s;
+        }
+        
+        .button1:hover{
+            box-shadow: 0px 3px 20px grey;
+        }
+   
+        .content {
+            margin: 58px 0.75em 2em 0.75em;
+            width: calc(100%-3em);
+        }
+        
+        .footer {
+            position:fixed;
+            background-color:#ffffff;
+            left:0px;
+            bottom:0px;
+            height:2em;
+            width:100%;
+            box-shadow: 0 0 1px grey;
+        }
+        
+        .footer-items {
+            display: flex;
+            font-size: 12px;
+            margin: .75em auto;
+            padding-left: 1em;
+            padding-right: 1em;
+            z-index: 1;
+            font-weight: bolder;
+            max-width: 500px;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.4em;
+        }
+        
+        .footer-left, .footer-middle, .footer-right {
+            padding-left: 2em; 
+            padding-right: 2em;
+        }
+        
+        .footer-items a {
+            text-decoration: none;
+            color: #000000;
+        }
+        
+         .footer-items a:hover {
+            text-decoration: none;
+            color: #ef4036;
+        }
+        
+        .footer-left {
+            text-align: left;
+            width: 33.33%;
+        }
+        
+        .footer-left a {
+            color: #0077B5;
+        }
+        
+        .footer-left a:hover {
+            color: #00A0DC;
+        }
+        
+        .footer-middle {
+            text-align: center;
+            width: 33.33%;
+        }
+        
+        .footer-middle a {
+             color: #3c5a99; 
+        }
+        
+        .footer-middle a:hover {
+            color: #4c69ba;
+        }
+        
+        .footer-right {
+            width: 33.33%;
+            text-align: right;
+        }
+        
+        .footer-right a {
+            color: #55acee;
+        }
+
+        .footer-right a:hover {
+            color: #66757f;
+        }
+        
+        .form {
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            margin: auto;
+            line-height: 1.5em;
+            font-weight: bolder;
+            text-align: justify;
+            max-width: 400px;
+        }
+        
+        input[type=text], input[type=email], select, .desc-field {
+            width: 100%;
+            background-color: #fafafa;
+            padding: 12px;
+            padding-bottom: 0px;
+            margin: 0em 0 1em 0;
+            display: inline-block;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        .input-field, .desc-field {
+            height: 2.5em;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+        }
+        
+        .input-field {
+            
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-bottom: 2px solid #2a388f;
+        }
+        
+        .desc-field {
+            height: 7em;
+        }
+        
+        .submit-button {
+            
+        }
+        
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-size: 50px;
+            color: #2a388f;
+            text-align: center;
+            font-weight: 300;
+        }
+        
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            text-align: left;
+            margin-bottom: none;
+            font-size: 30px;
+            color: #00aeef;
+            opacity: 0.87;
+            font-weight: bolder;
+        }
+        
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            line-height: 1em;
+            font-weight: bolder;
+            opacity: 0.87;
+
+        }
+              
+        .image-grid {
+            margin: 1.5em 0;
+            padding: 0;
+            -moz-column-gap: 1.5em;
+            -webkit-column-gap: 1.5em;
+            column-gap: 1.5em;
+            font-size: .85em;
+        }   
+        
+        .image-inner {
+            box-shadow: 0px 2px 3px grey;
+            -webkit-transition-duration: 0.5s; /* Safari */
+            transition-duration: 0.5s;
+            box-sizing: border-box;
+            height: auto;
+            border-radius: 2px;
+           -webkit-transition: all 0.3s ease-out;
+           -moz-transition: all 0.3s ease-out;
+           -o-transition: all 0.3s ease-out;
+           transition: all 0.3s ease-out;   
+        }
+        
+        .image-inner::after {
+            content: "";
+            border-radius: 2px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 2px 15px grey;
+            opacity: 0;
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        
+        .image-inner:hover {
+            -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1, 1);
+        }
+        
+        .image-inner:hover::after {
+            opacity: 1;
+        }
+        
+        .image-inner img {
+            width: 100%;
+            border-radius: 2px;
+            margin: 0 auto;
+            padding: 0;
+            display: block;
+        }     
+        
+        .article-section {
+            display: inline-block;
+            background-color: #fafafa;
+            padding: 1.5em;
+            margin: 0 0 0.75em;
+            width: calc(100%-1.5em);
+        }
+        
+        .image-right {
+            float: right;
+        }
+        
+        .image-title p{
+            font-weight: bolder;
+            margin-bottom: 0px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .image-text-container {
+            display: inline-block;
+            background-color: #e1e1e1;
+            border-radius: 2px;
+            padding: 0.25em 1em 0.25em 1em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+            max-width: 500px;
+            }
+        
+        .image-textbox .image-title {
+            display: flex;
+            position: relative;
+            background-color: #fafafa;
+        }
+        
+        .image-textbox p{
+            margin-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 15px;
+        }
+        
+        .lightbox {    
+            width: 100%;
+            height: 100%;
+            margin-top: 55px;
+            background-color: #ffffff;position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 600px;
+        }
+        
+        .lightbox amp-img {
+            max-width: 500px;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        
+        .nav {
+            list-style:none;
+            margin:0;
+            padding:3px;
+            text-align:center;
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            background-color: #ffffff;
+            /*box-shadow: 0px 5px 1px grey;
+            box-shadow: 0px .25px 3px grey;*/
+            }
+        
+        .nav a {
+            display:inline-block;
+            padding:10px;
+            padding-top: 16px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            color: #000000;
+        }
+        
+        .nav a:hover {
+            color: #ef4036;
+        }
+
+        .nav li{
+            display:inline-flex;
+            justify-content: space-between;
+            padding: auto;
+        }
+        
+        p  {
+            font-family: 'Roboto', sans-serif;
+            font-size: 19px;
+            line-height: 1.4em;
+            font-weight: normal;
+            opacity: 0.87;
+        }
+        
+        .portfolio {
+            margin-top: 0px;
+            float: center;
+            background-color: #ffffff;
+            max-width: 900px;   
+        }
+        
+        .span-logo {
+            display: inline-block;
+            padding: none;
+            vertical-align: top;  
+        }
+    
+        .span-logo img {
+            width: 35px;
+            height: auto;
+            margin-top: -8px;
+            margin-left: -15px;
+            margin-right: -5px;
+        }
+        
+        .splashscreen {
+            margin: 0 auto;
+        }
+        
+        .splashscreen img {
+            float: center;
+            margin: 0 auto;
+            width: 100%;            
+        }
+        
+        .subtitle {
+            font-weight: bold;
+        }
+        
+    @media only screen and (min-width: 450px) and (max-width: 799px) {
+        
+        .image-grid {
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+         
+         .article-image {
+            display: inline-block;
+            float: left;
+            width: 100%;
+        }
+        
+        .article-section-text {
+            display: inline-block;
+            width: 100%;
+            padding-left: none;
+            margin-top: none;
+        }
+        
+        .article-section-title h2 {
+            margin-top: 140px;
+        }
+        
+        .article-section {
+            display: inherit;
+            background-color: #fafafa;
+            padding: 1.5em 1.5em 7em 1.5em;
+            margin: 0 auto 3em;
+            max-width: 500px;
+        }
+        
+        .content {
+            width: calc(100%-3em);
+            margin: 58px 1.5em 3em 1.5em;
+        }
+    }
+        
+    @media only screen and (min-width: 800px) {
+        
+        .image-grid {
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+        
+        .article-image {
+            display: inline-block;
+            float: left;
+            width: 35%;
+        }
+        
+        .article-section-text {
+            display: inline-block;
+            float: right;
+            width: 55%;
+            margin-left: 3em;
+            margin-top: none;
+        }
+        
+        .article-section-title {
+            margin-top: 0px;
+        }
+        
+        .article-section {   
+            display: inherit;
+            background-color: #fafafa;
+            padding: 3em 3em 7em 3em;
+            max-width: 500px;
+            margin: 0 auto 1.5em;
+        }
+        
+/*
+        .article-section {
+            display: inline-block;
+            background-color: #fafafa;
+            padding: 3em;
+            margin: 0 0 1.5em;
+            width: calc(100%-3em);
+        }
+        
+*/
+        .content {
+            margin: 58px 1.5em 5em 1.5em;
+        }
+        
+        .footer {
+            height: 55px;
+        }
+        
+        .footer-items {
+            font-size: 15px;
+            margin: 15px auto;
+            z-index: 1;
+            font-weight: bolder;
+            padding-top: 3px;
+        }
+    }
+
+    @media only screen and (min-width: 900px) {
+       
+        .image-grid {
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            column-count: 3;
+        }
+        
+         .article-image {
+            display: inline-block;
+            float: left;
+            width: 45%;
+        }
+        
+        .article-section-text {
+            display: inline-block;
+            float: right;
+            width: 45%;
+            margin-left: 3em;
+            margin-top: none;
+        }
+        
+/*
+        .article-section {
+            display: inline-block;
+            background-color: #fafafa;
+            padding: 3em;
+            width: calc(100%-3em);
+        }
+*/
+    }
+
+    @media only screen and (min-width: 1100px) {
+        
+        .content {
+            max-width: 1180px;
+        }
+        
+        .image-grid {
+            -moz-column-count: 4;
+            -webkit-column-count: 4;
+            column-count: 4;
+        }
+    }
+
+    @media only screen and (min-width: 1280px) {
+        
+        .content {
+            max-width: 1280px;
+            margin: 58px auto 5em auto;
+        }  
+          
+        .article-section {
+            padding: 3em 3em 7em 3em;
+        }
+    }
+        
+    @media only screen and (min-width: 1380px) {
+        
+        .content {
+            margin: 58px auto 5em auto;
+        }
+    }
+        
+    </style>
+        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+
+  </head>
+    
+    <body>
+        
+        <div id="top" class="shadow">
+            
+            <ul class="nav">
+                
+                <li><a href="index.html">
+                        <span class="span-logo"><img src="img/Logo3.png" role="button" border="0"/></span>
+                    </a>
+                </li>
+                
+                <li><a href="index.html">About</a></li>
+                
+                <li><a href="#portfolio">Portfolio</a></li>
+                
+                <li><a href="blog.html">Blog</a></li>
+                
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+            
+        </div>
+        
+        <div class="content">
+            
+                <div class="article-content">
+                    
+                    <div class="article-section">
+                        
+                        <h1>Contact Me</h1>
+                        
+                        <div class="image-text-container">
+                
+                            <div class="image-title">
+                    
+                                <p>Want to collaborate or chat more?</p>
+            
+                            </div>
+                            
+                            <div class="image-textbox">
+                    
+                                <p>Please feel free to drop me a note and let me know what you have in mind.</p>
+                                
+                                <p>Cheers!</p>
+            
+                            </div>
+                            
+                            </div>
+                                    
+                        <form action="MAILTO:nelson.m.rozo@gmail.com" method="post" class="form" enctype="application/x-www-form-urlencoded">
+                            
+                            Name 
+                            <br>
+                            <input type="text" name="name" class="input-field">
+                            <br>
+                            Email 
+                            <br>
+                            <input type="email" class="input-field" required>
+                            <br>
+                            Message
+                            <br>
+                            <textarea rows="5" class="desc-field">
+                            </textarea>
+                            <input type="submit" value="submit" class="button1">
+                        
+                        </form>
+                        
+                        
+                        
+                        
+                                    
+                        
+        
+                    </div>
+  
+            </div>
+   
+        </div>
+        
+        
+ 
+    </body>
+    
+    <footer class="footer">
+        
+        <div class="footer-items">
+            
+            <div class="footer-left">
+                
+                <a href="https://www.linkedin.com/in/nelsonrozo" 
+                   target="_blank">LinkedIn</a>
+                
+            </div>
+            
+            <div class="footer-middle">
+                
+                <a href="http://m.me/codesigns.co"
+                   target="_blank">Messenger</a>
+                
+            </div>
+            
+            <div class="footer-right">
+            
+                <a href="https://twitter.com/codesigns_?ref_src=twsrc%5Etfw" target="_blank">Twitter</a>
+            
+            </div>
+            
+        </div>
+    
+    </footer>
+
+</html>

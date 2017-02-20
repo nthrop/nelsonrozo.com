@@ -1,0 +1,499 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>cō designs</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=RalewayRaleway:300,300i,400,400i,500,500i|Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <style amp-custom>
+   .nav{
+        list-style:none;
+        margin:0;
+        padding:3px;
+        text-align:center;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: #ffffff;
+        /*box-shadow: 0px 5px 1px grey;
+        box-shadow: 0px .25px 3px grey;*/
+
+
+    }
+    .nav li{
+        display:inline-flex;
+        justify-content: space-between;
+        padding: auto;
+    }
+        
+    .nav a {
+        display:inline-block;
+        padding:10px;
+        padding-top: 16px;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        color: #000000;
+        opacity: 87%;
+    }
+    
+        a:hover {
+            color: #ef4036;
+        }
+     
+        
+
+    .span-logo {
+        display: inline-block;
+        padding: none;
+        vertical-align: top;  
+    }
+    
+    .span-logo img {
+        width: 55px;
+        height: auto;
+        margin-top: -15px;
+        margin-left: -15px;
+        margin-right: -5px;
+    }
+        
+        .button1 {
+            float: right;
+            border: none;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+            padding: 10px 25px;
+            margin: 25px 15px;
+            background-color: #ef4036;
+            color: #ffffff;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0px 3px 10px grey;
+            -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+        }
+         .button1:hover{
+            box-shadow: 0px 3px 20px grey;
+        }
+   
+        .portfolio {
+            margin-top: 0px;
+            float: center;
+            background-color: #ffffff;
+            max-width: 900px;   
+        }
+        
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 50px;
+            color: #2a388f;
+            text-align: center;
+            font-weight: 300;
+        }
+        
+         .subtitle {
+            font-weight: bold;
+        }
+        
+        p  {
+            font-family: 'Roboto', sans-serif;
+            font-size: 19px;
+            line-height: 1.4em;
+            font-weight: normal;
+        }
+        
+        .splashscreen img {
+            float: center;
+            margin: 0 auto;
+            width: 100%;            
+        }
+        
+        .splashscreen {
+            margin: 0 auto;
+        }
+        
+        .image-single {
+            display: inline-block;
+            background-color: #fafafa;
+            padding: 1.5em;
+            margin: 0 0 1.5em;
+            width: calc(100%-1.5em);
+        }
+       
+        
+        .image-inner {
+            box-shadow: 0px 2px 3px grey;
+            background: #fafafa;
+ -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+        }
+        .image-inner::after {
+  content: "";
+  border-radius: 2px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 2px 15px grey;
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.image-inner:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1, 1);
+}
+
+.image-inner:hover::after {
+    opacity: 1;
+}
+        
+        .image-grid {
+            margin: 1.5em 0;
+            padding: 0;
+            -moz-column-gap: 1.5em;
+            -webkit-column-gap: 1.5em;
+            column-gap: 1.5em;
+            font-size: .85em;
+        }        
+
+        .image-inner img {
+            width: 100%;
+            
+            
+}
+    .content {
+        margin: 58px auto;
+       width: 95%;
+
+    }
+        
+        .about {
+            max-width: 700px;
+            margin: auto;
+        }
+        
+      .image-inner {
+           text-align: center;
+            border-radius: 2px;
+           -webkit-transition: all 0.3s ease-out;
+           -moz-transition: all 0.3s ease-out;
+           -o-transition: all 0.3s ease-out;
+           transition: all 0.3s ease-out;
+           
+        }
+        
+        .image-textbox .image-title {
+            display: flex;
+            position: relative;
+            background-color: #fafafa;
+        }
+        
+        .image-title p{
+           font-weight: bolder;
+            margin-bottom: 0px;
+             padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .image-textbox p{
+            margin-top: 5px;
+             padding-left: 5px;
+            padding-right: 5px;
+            font-size: 15px;
+        }
+        
+    
+        
+        .lightbox{
+            width: 100%;
+            height: 100%;
+            margin-top: 55px;
+            background-color: #ffffff;
+        
+        }
+        
+        .lightbox {
+            
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+            min-height: 500px;
+        }
+        
+        .lightbox amp-img {
+            max-width: 650px;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+       
+  body {
+    background-color: white;
+}
+body:before,
+#top,
+body:after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    z-index: 9999;
+    background-color: #ffffff;
+}
+body:before{
+    content: '';
+    display: block;
+    z-index: 9997;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+body:after {
+    content: '';
+    display: block;
+    position: absolute; /* this needs to scroll */
+    background-color: white; /* match background of body */
+    top: 55px;
+    height: 4px; /* covers height of :before shadow */ 
+    z-index: 9998; /* overlap :before, moves on scroll */
+}
+@media only screen and (min-width: 450px) {
+    .image-grid {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+     
+      
+
+@media only screen and (min-width: 900px) {
+    .image-grid {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .image-grid {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .content {
+        width: 1260px;
+    }
+        }
+</style>
+        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+
+  </head>
+  <body>
+      
+      <div id="top" class="shadow">
+    <ul class="nav">
+      <li>
+        <a href="#">
+        <span class="span-logo">
+        <img src="codesigns_logo-small1-e1451698530509.png" border="0"/>
+        </span>
+        </a>
+      </li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="portfolio/">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul> 
+          </div>
+    <div class="content">
+    <div class="about"><h1>About</h1>
+    <div class="splashscreen"><img src="About_Splashscreen-Max-e1451698800528.png"/>
+    </div>
+    <p class="subtitle">Hi, my name is Nelson.</p>
+
+        <p>My designs fuse cognitive psychology and user research with various design mediums.</p>
+
+        <p>Please check out some of my work below.</p>
+
+        <p>Thanks,
+        <br>Nelson</p>
+    
+    </div>
+        <h1>Portfolio</h1>
+        <div class="image-grid">
+            <div class="image-single">
+                <div class="image-pad">
+            <div class="image-inner">
+                <img src="cocuts_portfolio%20logo-03-01.png" />
+            </div>
+             <div class="image-title">
+                    <p>Textbox content.</p>
+            </div>
+                <div class="image-textbox">
+                    <p>This is a sample of text that will appear in this box. Any other text will appear in the case study when you click "read more."</p>
+                    <button class="button1">Read More</button>
+            </div>
+        </div>
+        </div>
+        
+            <div class="image-single">
+            <div class="image-pad">
+                <div class="image-inner">
+                <img src="coCuts_payment%20icon%20portfolio-01-01.png" />
+            </div>
+                 <div class="image-title">
+                    <p>Textbox content.</p>
+            </div>
+                <div class="image-textbox">
+                    <p>This is a sample of text that will appear in this box. Any other text will appear in the case study when you click "read more."</p>
+                    <button class="button1">Read More</button>
+            </div>
+        </div>
+        </div>
+        
+            <div class="image-single">
+            <div class="image-pad">
+                <div class="image-inner">
+                <img src="coCuts_location%20icon%20portfolio-01.png" />
+            </div>
+                <div class="image-title">
+                    <p>Textbox content.</p>
+            </div>
+                <div class="image-textbox">
+                    <p>This is a sample of text that will appear in this box. Any other text will appear in the case study when you click "read more."</p>
+                    <button class="button1">Read More</button>
+            </div>
+            </div>
+        
+            </div>  
+            <div class="image-single" >
+                <div class="image-pad">
+            <div class="image-inner">
+                <img src="cocuts_portfolio%20logo-03-01.png" />
+            </div>
+             <div class="image-title">
+                    <p>Textbox content.</p>
+            </div>
+                <div class="image-textbox">
+                    <p>This is a sample of text that will appear in this box. Any other text will appear in the case study when you click "read more."</p>
+                    <button class="button1">Read More</button>
+            </div>
+        </div>
+        </div>
+        
+            <div class="image-single">
+            <div class="image-pad">
+                <div class="image-inner">
+                <img src="coCuts_payment%20icon%20portfolio-01-01.png" />
+            </div>
+                 <div class="image-title">
+                    <p>Textbox content.</p>
+            </div>
+                <div class="image-textbox">
+                    <p>This is a sample of text that will appear in this box. Any other text will appear in the case study when you click "read more."</p>
+                    <button class="button1">Read More</button>
+            </div>
+        </div>
+        </div>
+        
+            <div class="image-single">
+            <div class="image-pad">
+                <div class="image-inner">
+                <img src="coCuts_location%20icon%20portfolio-01.png" on="tap:my-lightbox"/>
+            </div>
+                <div class="image-title">
+                    <p>Textbox content.</p>
+            </div>
+               <button on="tap:my-lightbox">Open lightbox</button>
+
+<amp-lightbox id="my-lightbox" on="tap:my-lightbox.close" layout="nodisplay">
+  <div class="lightbox">
+    <amp-img src="coCuts_location%20icon%20portfolio-01.png" width=500 height=500 layout="responsive"  role="img" tabindex="1">
+  </amp-img>
+    </div>
+</amp-lightbox> <div class="image-textbox">
+                    <p>This is a sample of text that will appear in this box. Any other text will appear in the case study when you click "read more."</p>
+                    <button class="button1">Read More</button>
+            </div>
+            </div>
+        
+            </div>   
+  </div>
+        <div class="clearfix">
+    <p>The standard Lorem Ipsum passage, used since the 1500s
+
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    </p><p>The standard Lorem Ipsum passage, used since the 1500s
+
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    </p><p>The standard Lorem Ipsum passage, used since the 1500s
+
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    </p><p>The standard Lorem Ipsum passage, used since the 1500s
+
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    </p><p>The standard Lorem Ipsum passage, used since the 1500s
+
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    </p>
+      </div>
+    </div>
+  </body>
+</html>

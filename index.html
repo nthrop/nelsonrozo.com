@@ -1,0 +1,1003 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>cō designs</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Portfolio",
+        "headline": "Cognitive Psychology",
+        "datePublished": "2016-25-06T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+      </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=RalewayRaleway:300,300i,400,400i,500,500i|Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    
+    <style amp-custom>
+        
+        a:hover {
+            color: #ef4036;
+            }
+     
+        .about {
+            max-width: 350px;
+            width: calc(95%-4em);
+            margin: auto;
+            padding-top: 5px;
+            padding-bottom: 20px;
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+        
+        body {
+            background-color: white;
+        }
+
+        body:before,
+
+        #top, body:after {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 55px;
+            z-index: 9999;
+            background-color: #ffffff;
+        }
+        
+        body:before{
+            content: '';
+            display: block;
+            z-index: 9997;
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        body:after {
+            content: '';
+            display: block;
+            position: absolute; /* this needs to scroll */
+            background-color: #2a388f; /* match background of body */
+            top: -4px;
+            height: 5px; /* covers height of :before shadow */ 
+            z-index: 9998; /* overlap :before, moves on scroll */
+        }
+        
+        .button1 {
+            float: right;
+            border: none;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+            padding: 10px 25px;
+            margin: 25px 15px;
+            background-color: #ef4036;
+            color: #ffffff;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0px 3px 10px grey;
+            -webkit-transition-duration: 0.2s; /* Safari */
+            transition-duration: 0.2s;
+        }
+        
+        .button1:hover{
+            box-shadow: 0px 3px 20px grey;
+            color: #ffffff;
+        }
+        
+        /*
+    ===================
+    Footer
+    ===================
+    */
+        
+        .footer {
+            position:fixed;
+            background-color:#ffffff;
+            left:0px;
+            bottom:0px;
+            height:25px;
+            width:100%;
+            box-shadow: 0 0 1px grey;
+        }
+        
+        .footer-items p {
+            display: justify;
+            font-size: 12px;
+            margin: 4px 12px;
+            list-style:none;
+            z-index: 1;
+            font-weight: bolder;
+        }
+        
+        .footer-items a {
+            text-decoration: none;
+            color: #000000;
+            opacity: 0.87;
+        }
+        
+        .footer-items a:hover {
+            text-decoration: none;
+            color: #ef4036;
+        }
+        
+        .footer-left {
+            float: left;
+        }
+        
+        .footer-right {
+            float: right;
+        }
+        
+    @media only screen and (min-width: 800px) {
+        
+        .footer {
+            height: 55px;
+        }
+        
+        .footer-items p {
+            font-size: 15px;
+            margin: 15px 25px;
+            list-style:none;
+            z-index: 1;
+            font-weight: bolder;
+            padding-top: 3px;
+        }
+    }
+        
+        
+   
+        .content {
+            margin: auto;
+            margin-top: -20px;
+            width: 95%;
+        }
+        
+        .content p {
+            color: #000000;
+        }
+        
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            font-size: 50px;
+            color: #2a388f;
+            text-align: center;
+            font-weight: 300;
+        }
+        
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            text-align: left;
+            margin-bottom: -15px;
+            font-size: 30px;
+            color: #000000;
+            opacity: 0.87;
+            font-weight: normal;
+            padding: 0;
+        }
+        
+        .thumbnail-with-text h2 {
+            padding-left: 0;
+        }
+        
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            line-height: 1em;
+            font-weight: bolder;
+            opacity: 0.87;
+
+        }
+        
+        .about h1, p {
+            color: #ffffff;
+        }
+        
+        .about h1 {
+            margin-bottom: -15px;
+        }
+        
+        .about p {
+            opacity: 0.87;
+            font-size: 18px;
+        }
+        
+        footer p {
+            display: justify;
+            color: #000000;
+            font-size: 12px;
+            margin: 4px 12px;
+            list-style:none;
+            z-index: 1;
+            font-weight: bolder;
+        }
+        
+        .grey-background {
+            background-color: #eaeaea;
+        }
+        
+        .heading {
+            margin: 58px auto;
+            margin: none;
+            background-color: #2a388f;
+            z-index: 0;
+        }
+              
+        .image-grid {
+            margin: 1.5em 0;
+            padding: 0;
+            -moz-column-gap: 1.5em;
+            -webkit-column-gap: 1.5em;
+            column-gap: 1.5em;
+            font-size: .85em;
+        }   
+        
+        .image-inner {
+            background: #ffffff;
+            -webkit-transition-duration: 0.5s; /* Safari */
+            transition-duration: 0.5s;
+            text-align: center;
+            border-radius: 2px;
+           -webkit-transition: all 0.2s ease-out;
+           -moz-transition: all 0.2s ease-out;
+           -o-transition: all 0.2s ease-out;
+           transition: all 0.2s ease-out;   
+        }
+        
+        .image-inner::after {
+            content: "";
+            border-radius: 2px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            --webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            opacity: 0;
+            
+            
+/*
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+*/
+        }
+        
+        .image-inner:hover {
+            box-shadow: 0px 2px 10px grey;
+/*
+            --webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+*/
+      
+        }
+        
+        .image-inner:hover::after {
+            opacity: 1;
+        }
+        
+        .image-inner amp-img {
+            width: 100%;
+            display: block;
+            box-shadow: 0px 2px 3px grey;
+
+        }     
+        
+        .image-single {
+            display: inline-block;
+            background-color: #fafafa;
+            padding: 1.5em;
+            margin: 0 0 1.5em;
+            width: calc(100%-1.5em);
+        }
+        
+        .image-title p, h2 {
+            padding-left: 5px;
+            padding-right: 5px; 
+        }
+        
+        .image-title p{
+           font-weight: bolder;
+            margin-bottom: 0px;
+        }
+        
+        .image-textbox .image-title {
+            display: flex;
+            position: relative;
+            background-color: #fafafa;
+        }
+        
+        .image-textbox p{
+            margin-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 15px;
+        }
+        
+        .lightbox {    
+            width: 100%;
+            height: 100%;
+            margin-top: 55px;
+            background-color: #ffffff;position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 600px;
+        }
+        
+        .lightbox amp-img {
+            max-width: 500px;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        
+        .nav{
+            list-style:none;
+            margin:0;
+            padding:3px;
+            text-align:center;
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            background-color: #ffffff;
+            /*box-shadow: 0px 5px 1px grey;
+            box-shadow: 0px .25px 3px grey;*/
+            }
+        
+        .nav a {
+            display:inline-block;
+            padding:10px;
+            padding-top: 16px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            color: #000000;
+        }
+        
+        .nav a:hover {
+            color: #ef4036;
+        }
+
+        .nav li{
+            display:inline-flex;
+            justify-content: space-between;
+            padding: auto;
+        }
+        
+        p  {
+            font-family: 'Roboto', sans-serif;
+            font-size: 19px;
+            line-height: 1.4em;
+            font-weight: normal;
+        }
+        
+        .portfolio {
+            margin-top: -10px;
+            float: center;
+            background-color: #ffffff;
+            max-width: 900px;   
+        }
+        
+        .span-logo {
+            display: inline-block;
+            padding: none;
+            vertical-align: top;  
+        }
+    
+        .span-logo amp-img {
+            width: 35px;
+            height: auto;
+            margin-top: -8px;
+            margin-left: -15px;
+            margin-right: -5px;
+        }
+        
+        .splashscreen {
+            margin: 0 auto;
+        }
+        
+        .splashscreen amp-img {
+            margin: 0 auto;
+            margin-top: -25px;
+            margin-left: 45%;
+            margin-right: -24%;
+            width: 75%;  
+            -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+            -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition: transform .8s ease-in-out;
+        }
+        
+        .splashscreen amp-img:hover {
+            -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+        }
+        
+        .subtitle {
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        :target:after {
+            content:"";
+            display:block;
+            height:35px; /* fixed header height*/
+            margin:-35px 0 0; /* negative fixed header height */
+        }
+        
+        .thumbnail-with-text {
+            display: inline-block;
+            width: calc(100%-3em);
+            margin: auto;
+            padding: 1.5em;
+        }
+        
+    @media only screen and (min-width: 450px) {
+        .image-grid {
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+        
+    }
+        
+    @media only screen and (min-width: 800px) {
+        
+        .thumbnail-with-text {
+            padding: 1em 6%;
+        }
+        
+        .thumbnail-image {
+            width: 40%;
+            display: inline-block;
+            margin: auto;
+            float: left;
+        }
+        
+        .thumbnail-text {
+            width: 40%;
+            display: inline-block;
+            margin: auto;
+            padding-left: 3em;
+        }  
+        
+    }
+
+    @media only screen and (min-width: 900px) {
+        .image-grid {
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            column-count: 3;
+        }
+        
+        .about {
+            max-width: 470px;
+            color: #ffffff;
+        }         
+        
+        .about h3 {
+            font-size: 30px;
+        }
+        .about p {
+            font-size: 25px;
+        }
+        
+        .heading {
+            
+            background: -webkit-linear-gradient(right,#2F3FA1, #2A388F, #2A388F, #2F3FA1); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, #2A388F, #152482, #152482,#2A388F); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, #2A388F, #152482, #152482,#2A388F); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(right, #2A388F, #152482, #152482,#2A388F); /* Standard syntax */
+        }  
+    }
+
+    @media only screen and (min-width: 1100px) {
+/*
+        .image-grid {
+            -moz-column-count: 4;
+            -webkit-column-count: 4;
+            column-count: 4;
+        }
+*/      
+         .thumbnail-text {
+            padding-top: 4em;
+        }  
+       
+    }
+
+    @media only screen and (min-width: 1280px) {
+        
+         .thumbnail-text {
+            padding-top: 7em;
+        }  
+       
+    }
+        
+    </style>
+        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+
+  </head>
+    
+    <body>
+        
+        <div id="top" class="shadow">
+            
+            <ul class="nav">
+                
+                <li><a href="index.html">
+                        <span class="span-logo"><amp-img src="img/Logo3.png" width="55" height="55" layout="responsive" role="button"/></span>
+                    </a>
+                </li>
+                <li><a href="index.html">About</a></li>
+                
+                <li><a href="#portfolio">Portfolio</a></li>
+                
+                <li><a href="blog.html">Blog</a></li>
+                
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+            
+        </div>
+            
+            <div class="heading">
+            
+                <div class="about">
+
+                    <h1>About</h1>
+
+<!--
+                    <div class="splashscreen">
+
+                        <amp-img src="Interaction-Design-1024x1024.png"/>
+
+                    </div>
+-->
+
+                    <p class="subtitle">Hi, my name is Nelson.</p>
+
+                    <p>My designs fuse cognitive psychology & user research across various mediums.</p>
+                    
+                    
+
+                    <p>Please check out  some of my work below.</p>
+                    
+                    <a name="portfolio"></a>
+
+                    
+
+                </div>
+                
+            </div>
+        
+        <div class="content">
+        
+            <h1>Portfolio</h1>
+            
+                <div class="image-grid">
+                    
+                    <div class="image-single">
+            
+                        <div class="image-pad">
+                
+                            <div class="image-inner">
+                
+                                <amp-img src="img/Olio%20Images%20Tilted.png" layout="responsive" width="3600" height="3000" on="tap:my-lightbox1" role="button" tabindex="0"/>
+            
+                            </div>
+                
+                            <div class="image-title">
+                                
+                                <h2>Olio Devices</h2>
+                    
+                                <p>A luxury smart watch.</p>
+            
+                            </div>
+                            
+                            
+               
+
+                            <amp-lightbox id="my-lightbox1" on="tap:my-lightbox1.close" layout="nodisplay">
+  
+                                <div class="lightbox">
+    
+                                    <amp-img src="img/Olio%20Images%20Tilted.png" width="3600" height="3000" layout="responsive">
+  
+                                    </amp-img>
+    
+                                </div>
+
+                            </amp-lightbox> 
+                            
+                            <div class="image-textbox">
+                    
+                                <p>Wireframes, videos, mockups, web design, HTML, CSS, email campaigns, social media content, usability research.</p>
+                    
+                                <a class="button1" href="Portfolio_Olio%20Devices.html">Read More</a>
+            
+                            </div>
+            
+                        </div>
+        
+                    </div> 
+                    
+                    <div class="image-single">
+            
+                        <div class="image-pad">
+                
+                            <div class="image-inner">
+                
+                                <amp-img src="img/Solidarity%20App%20Trio.png" width=6943 height=5809 layout="responsive" on="tap:my-lightbox2" role="button" tabindex="0"/>
+            
+                            </div>
+                
+                            <div class="image-title">
+                    
+                                <h2>Solidarity</h2>
+                                
+                                <p>Mental health & well-being.</p>
+            
+                            </div>
+               
+
+                            <amp-lightbox id="my-lightbox2" on="tap:my-lightbox2.close" layout="nodisplay">
+  
+                                <div class="lightbox">
+    
+                                    <amp-img src="img/Solidarity%20App%20Trio.png" width=6943 height=5809 layout="responsive">
+  
+                                    </amp-img>
+    
+                                </div>
+
+                            </amp-lightbox> 
+                            
+                            <div class="image-textbox">
+                    
+                                <p>Competitive analysis, personas, sketches, presentation pitch deck, use cases, wireframes, high-fidelity mockups, working prototype.</p>
+                    
+                                <button class="button1">Read More</button>
+            
+                            </div>
+            
+                        </div>
+        
+                    </div> 
+                    
+                    <div class="image-single">
+            
+                        <div class="image-pad">
+                
+                            <div class="image-inner">
+                
+                                <amp-img src="img/Library-Final-Floor-Plan-01.png" width="3600" height="3000" layout="responsive" on="tap:my-lightbox3" role="button" tabindex="0"/>
+            
+                            </div>
+                
+                            <div class="image-title">
+                    
+                                <h2>81st Ave. Library</h2>
+                                
+                                <p>A more useable space.</p>
+            
+                            </div>
+               
+
+                            <amp-lightbox id="my-lightbox3" on="tap:my-lightbox3.close" layout="nodisplay">
+  
+                                <div class="lightbox">
+    
+                                    <amp-img src="img/Library-Final-Floor-Plan-01.png" width=3600 height=3000 layout="responsive">
+  
+                                    </amp-img>
+    
+                                </div>
+
+                            </amp-lightbox> 
+                            
+                            <div class="image-textbox">
+                    
+                                <p>Print, architecture, in-depth interviews, usability research, ethnographic research.</p>
+                    
+                                <button class="button1">Read More</button>
+            
+                            </div>
+            
+                        </div>
+        
+                    </div> 
+                    
+                    <div class="image-single">
+            
+                        <div class="image-pad">
+                
+                            <div class="image-inner">
+                
+                                <amp-img src="img/cocuts_portfolio%20logo-03-01.png" width="1501" height="2200" layout="responsive" on="tap:my-lightbox4" role="button" tabindex="0"/>
+            
+                            </div>
+                
+                            <div class="image-title">
+                    
+                                <h2>cōCuts</h2>
+                                
+                                <p>A hairdresser's dream.</p>
+            
+                            </div>
+               
+
+                            <amp-lightbox id="my-lightbox4" on="tap:my-lightbox4.close" layout="nodisplay">
+  
+                                <div class="lightbox">
+    
+                                    <amp-img src="img/cocuts_portfolio%20logo-03-01.png" width=1501 height=2200 layout="responsive">
+  
+                                    </amp-img>
+    
+                                </div>
+
+                            </amp-lightbox> 
+                            
+                            <div class="image-textbox">
+                    
+                                <p>Print, web design, business development, social media content, presentation pitch deck, personas, sketches, use cases.</p>
+                    
+                                <button class="button1">Read More</button>
+            
+                            </div>
+            
+                        </div>
+        
+                    </div> 
+                    
+                    <div class="image-single">
+            
+                        <div class="image-pad">
+                
+                            <div class="image-inner">
+                
+                                <amp-img src="img/Education-02-1240x1240.png" width="500" height="500" layout="responsive" on="tap:my-lightbox5" role="button" tabindex="0"/>
+            
+                            </div>
+                
+                            <div class="image-title">
+                    
+                                <h2>UC Berkeley Thesis</h2>
+                                
+                                <p>The modern world.</p>
+            
+                            </div>
+               
+
+                            <amp-lightbox id="my-lightbox5" on="tap:my-lightbox5.close" layout="nodisplay">
+  
+                                <div class="lightbox">
+    
+                                    <amp-img src="img/Education-02-1240x1240.png" width=500 height=500 layout="responsive">
+  
+                                    </amp-img>
+    
+                                </div>
+
+                            </amp-lightbox> 
+                            
+                            <div class="image-textbox">
+                    
+                                <p>Research topics: urbanism, neuroscience, sociology, globalism, mental health, cities, developing countries.</p>
+                    
+                                <button class="button1">Read More</button>
+            
+                            </div>
+            
+                        </div>
+        
+                    </div> 
+                    
+                    <div class="image-single">
+            
+                        <div class="image-pad">
+                
+                            <div class="image-inner">
+                
+                                <amp-img src="img/Research-EEG.png" width=500 height=500 layout="responsive" on="tap:my-lightbox6" role="button" tabindex="0"/>
+            
+                            </div>
+                
+                            <div class="image-title">
+                    
+                                <h2>Methodologies</h2>
+                                
+                                <p>My ideas for research.</p>
+            
+                            </div>
+               
+
+                            <amp-lightbox id="my-lightbox6" on="tap:my-lightbox6.close" layout="nodisplay">
+  
+                                <div class="lightbox">
+    
+                                    <amp-img src="img/Research-EEG.png" width=500 height=500 layout="responsive">
+  
+                                    </amp-img>
+    
+                                </div>
+
+                            </amp-lightbox> 
+                            
+                            <div class="image-textbox">
+                    
+                                <p>EEG, psychophysics, ethnography, in-depth interviews.</p>
+                    
+                                <button class="button1">Read More</button>
+            
+                            </div>
+            
+                        </div>
+        
+                    </div> 
+  
+            </div>
+            
+            <h1>Research</h1>
+            
+            <div class="thumbnail-with-text">
+            
+                <div class="thumbnail-image"><amp-img src="img/EEG.png" width=500 height=500 layout="responsive"></amp-img></div>
+
+                <div class="thumbnail-text">
+                    
+                    <h3>Knight Lab</h3>
+                    
+                    <p>After learning more about visual perception and a bit of Psychophysic research methods, I decided to learn more about how the brain itself reacts when presented with different types of visual stimuli. This time I looked at brain waves using EEG while I was running visual perception experiments within Matlab.</p>
+                
+                </div>
+
+            </div>
+            
+            <div class="grey-background">
+            
+            <div class="thumbnail-with-text">
+            
+                <div class="thumbnail-image"><amp-img src="img/3-D.png" width=400 height=400 layout="responsive"></amp-img></div>
+
+                <div class="thumbnail-text">
+                    
+                    <h3>Banks Lab</h3>
+                    
+                    <p>Ever since that one Perception class I took at UC Berkeley, there was a curiosity ignited within me to understand what makes the brain tick when it comes to visual perception. While at Berkeley I was privileged to receive hands-on experimental design training with Matlab in signal detection theory, psychophysics, quantitative data analysis, and Bayesian to test stereoscopic vision and 3D perception.</p>
+                
+                </div>
+
+            </div>
+                
+                </div>
+            
+            <div class="thumbnail-with-text">
+            
+                <div class="thumbnail-image"><amp-img src="img/Education-02-1240x1240.png" width=500 height=500 layout="responsive"></amp-img></div>
+
+                <div class="thumbnail-text">
+                    
+                    <h3>Honors Thesis</h3>
+                    
+                    <p>An interdisciplinary thesis drawing from architecture, neuroscience, city planning, and mental health. This research takes a closer look into how city living affects the mind, while presenting possible implications and as well as highlighting the importance of future research.</p>
+                    
+                    <p><em>In 2008, for the first time in history there were more people living in cities than in rural areas. This expansion is projected to increase and new growth is expected to be heavily concentrated in Africa and Asia. Along with this growing trend in urbanization, there is an urgency to focus on how these city structures are influencing and shaping the emotional health of their citizens.</em></p>
+                
+                </div>
+
+            </div>
+            
+            <h1>Education</h1>
+            
+                <div class="thumbnail-with-text">
+            
+                    <div class="thumbnail-image"><amp-img src="img/Interaction-Design-1024x1024.png" width=500 height=500 layout="responsive"></amp-img></div>
+
+                        <div class="thumbnail-text">
+
+                            <h3>Interaction Design</h3>
+
+                            <p>University of California, San Diego & Coursera (in progress)</p>
+
+                            <p>topics: human-centered design, design principles and heuristics, UX research and design, interaction design, prototyping, experimental design, protocol, and analysis…</p>
+
+                        </div>
+            
+            
+   
+                </div>
+            
+            <div class="grey-background">
+            
+                <div class="thumbnail-with-text">
+            
+                    <div class="thumbnail-image"><amp-img src="img/Eyeglasses-1240x1240.png" width=1200 height=931 layout="responsive"></amp-img></div>
+
+                    <div class="thumbnail-text">
+                    
+                        <h3>Perception: The Mind and Its Environment</h3>
+
+                        <p>UC Berkeley</p>
+
+                        <p>topics: psychophysics, cognitive science, neuroscience, sociology, startups, psychology, linguistics…</p>
+                
+                    </div>
+            
+            
+   
+                </div>
+            
+                </div>
+            
+                <div class="thumbnail-with-text">
+            
+                    <div class="thumbnail-image"><amp-img src="img/Headphones-05-1240x1240.png" width=500 height=500 layout="responsive"></amp-img></div>
+
+                    <div class="thumbnail-text">
+                    
+                        <h3>Advanced Audio Technology</h3>
+
+                        <p>Mt. San Jacinto College</p>
+
+                        <p>topics: basics of psychoacoustics, advanced recording techniques, video production, multimedia, and 3-D animation…</p>
+                
+                    </div>
+            
+            
+   
+                </div>
+            
+            <p>Made by Nelson Rozo Copyright 2016</p>
+            
+        </div>
+
+ 
+    </body>
+             
+    
+     <footer class="footer">
+        
+        <div class="footer-items">
+            
+            <div class="footer-left">
+                
+                <p><a href="index.html"><amp-img src=img/Arrow_Left@4x.png width=8 height=10></amp-img> Previous Item</a></p>
+                
+            </div>
+            
+            <div class="footer-right">
+            
+                <p><a href="index.html">Next Item <amp-img src=img/Arrow_Right@4x.png width=8 height=10></amp-img></a></p>
+            
+            </div>
+            
+        </div>
+    
+    </footer>
+
+</html>

@@ -1,0 +1,1011 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>cō designs</title>
+    <link rel="canonical" href="http://127.0.0.1:59752/portfolio%20template.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=RalewayRaleway:300,300i,400,400i,500,500i|Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet" type='text/css'>
+    <style amp-custom>
+        
+        a:hover {
+            color: #ef4036;
+        }
+     
+        .about {
+            width: 100%;
+            margin: auto;
+            background-color: #4b0c37;
+            color: #ffffff;
+        }
+        
+        .about-content {
+            display: block;
+            width: calc(95%-4em);
+            margin: auto;
+            padding-left: 2em;
+            padding-right: 2em;
+            padding-top: 1.75em;
+        }
+        
+        .about-text {
+            width: 45%;
+            display: inline-block;
+            float: left;
+        }
+        
+        .about-text h3 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+        
+        .about-image {
+            width: 55%;
+            display: inline-block;
+            position: relative;
+            bottom: -4px;
+        }
+        
+        .about-image img {
+            width: 60%;
+            float: right;
+        }
+        
+        body {
+            background-color: white;
+        }
+
+        body:before,
+
+        #top, body:after {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 55px;
+            z-index: 9999;
+            background-color: #ffffff;
+        }
+        
+        body:before{
+            content: '';
+            display: block;
+            z-index: 9997;
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        body:after {
+            content: '';
+            display: block;
+            position: absolute; /* this needs to scroll */
+            background-color: white; /* match background of body */
+            top: 55px;
+            height: 4px; /* covers height of :before shadow */ 
+            z-index: 9998; /* overlap :before, moves on scroll */
+        }
+        
+        .button1 {
+            float: right;
+            border: none;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+            padding: 10px 25px;
+            margin: 25px 15px;
+            background-color: #ef4036;
+            color: #ffffff;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0px 3px 10px grey;
+            -webkit-transition-duration: 0.2s; /* Safari */
+            transition-duration: 0.2s;
+        }
+        
+        .button1:hover{
+            box-shadow: 0px 3px 20px grey;
+        }
+   
+        .content {
+            margin: 0.75em 0.75em 1.5em 0.75em;
+            width: calc(100%-1.5em);
+        }
+        
+        .footer {
+            position:fixed;
+            background-color:#ffffff;
+            left:0px;
+            bottom:0px;
+            height:25px;
+            width:100%;
+            box-shadow: 0 0 1px grey;
+        }
+        
+        .footer-items p {
+            display: justify;
+            font-size: 12px;
+            margin: 4px 12px;
+            list-style:none;
+            z-index: 1;
+            font-weight: bolder;
+        }
+        
+        .footer-items a {
+            text-decoration: none;
+            color: #000000;
+            opacity: 0.87;
+        }
+        
+        .footer-items a:hover {
+            text-decoration: none;
+            color: #ef4036;
+        }
+        
+        .footer-left {
+            float: left;
+        }
+        
+        .footer-right {
+            float: right;
+        }
+        
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 50px;
+            color: #4b0c37;
+            text-align: center;
+            font-weight: 300;
+        }
+        
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            text-align: left;
+            margin-bottom: none;
+            font-size: 30px;
+            color: #000000;
+            opacity: 0.87;
+            font-weight: bold;
+        }
+        
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            line-height: 1em;
+            font-weight: bolder;
+            opacity: 0.87;
+
+        }
+        
+/*
+        .about h1, p {
+            color: #ffffff;
+        }
+*/
+        
+        .about h1 {
+            margin-bottom: -15px;
+        }
+        
+        .about p {
+            opacity: 0.87;
+            font-size: 18px;
+        }
+        
+        .heading {
+            margin: 58px auto auto auto;
+        }
+              
+        .image-grid {
+            margin: 1.5em 0;
+            padding: 0;
+            -moz-column-gap: 1.5em;
+            -webkit-column-gap: 1.5em;
+            column-gap: 1.5em;
+            font-size: .85em;
+        }   
+        
+        .image-inner {
+            box-shadow: 0px 2px 3px grey;
+            -webkit-transition-duration: 0.5s; /* Safari */
+            transition-duration: 0.5s;
+            box-sizing: border-box;
+            height: auto;
+            border-radius: 2px;
+           -webkit-transition: all 0.3s ease-out;
+           -moz-transition: all 0.3s ease-out;
+           -o-transition: all 0.3s ease-out;
+           transition: all 0.3s ease-out;   
+        }
+        
+        .image-inner::after {
+            content: "";
+            border-radius: 2px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 2px 15px grey;
+            opacity: 0;
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        
+        .image-inner:hover {
+            -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1, 1);
+        }
+        
+        .image-inner:hover::after {
+            opacity: 1;
+        }
+        
+        .image-inner img {
+            width: 100%;
+            border-radius: 2px;
+            margin: 0 auto;
+            padding: 0;
+            display: block;
+        }  
+        
+        .image-title p, .image-title h3{
+            font-weight: bolder;
+            margin-bottom: 0px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .image-textbox .image-title {
+            display: flex;
+            position: relative;
+            background-color: #fafafa;
+        }
+        
+        .image-textbox p {
+            margin-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 15px;
+        }
+        
+        .image-text-container {
+            display: inline-block;
+            background-color: #e1e1e1;
+            border-radius: 2px;
+            padding: 0.25em 1em 0.25em 1em;
+            margin-top: 1.5em;
+            color: #ffffff;
+            background: -webkit-linear-gradient(right, #1db24b , #8dc63f); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, #1db24b, #8dc63f); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, #1db24b, #8dc63f); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, #1db24b , #8dc63f); /* Standard syntax */
+            }
+        
+        .image-text-container h3 {
+            opacity: 1;
+        }
+        
+        .article-section {
+            display: inline-block;
+            background-color: #fafafa;
+            padding: 1.5em;
+            margin: 0 0 0.75em;
+            width: calc(100%-1.5em);
+        }
+        
+        .article-section h2 {
+            margin-top: 0;
+        }
+        
+        .image-right {
+            float: right;
+        }
+        
+        .image-title p, .image-title h3{
+            font-weight: bolder;
+            margin-bottom: 0px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .lightbox {    
+            width: 100%;
+            height: 100%;
+            margin-top: 55px;
+            background-color: #ffffff;position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 600px;
+        }
+        
+        .lightbox img {
+            max-width: 500px;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        
+        .nav {
+            list-style:none;
+            margin:0;
+            padding:3px;
+            text-align:center;
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            background-color: #ffffff;
+            /*box-shadow: 0px 5px 1px grey;
+            box-shadow: 0px .25px 3px grey;*/
+            }
+        
+        .nav a {
+            display:inline-block;
+            padding:10px;
+            padding-top: 16px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            color: #000000;
+            opacity: 0.87;
+        }
+        
+        .nav a:hover {
+            color: #ef4036;
+        }
+
+        .nav li{
+            display:inline-flex;
+            justify-content: space-between;
+            padding: auto;
+        }
+        
+        p, ul  {
+            font-family: 'Roboto', sans-serif;
+            font-size: 19px;
+            line-height: 1.4em;
+            font-weight: normal;
+            opacity: 0.87;
+        }
+        
+        .portfolio {
+            margin-top: 0px;
+            float: center;
+            background-color: #ffffff;
+            max-width: 900px;   
+        }
+        
+        .span-logo {
+            display: inline-block;
+            padding: none;
+            vertical-align: top;  
+        }
+    
+        .span-logo img {
+            width: 55px;
+            height: auto;
+            margin-top: -15px;
+            margin-left: -15px;
+            margin-right: -5px;
+        }
+        
+        .splashscreen {
+            margin: 0 auto;
+        }
+        
+        .splashscreen img {
+            float: center;
+            margin: 0 auto;
+            width: 100%;            
+        }
+        
+        .subtitle {
+            font-weight: bold;
+        }
+        
+    @media only screen and (min-width: 450px) {
+            
+        .about-content {
+            width: calc(95%-6em);
+            max-width: 700px;
+            margin: auto;
+            margin-top: 1em;
+            padding-top: 2.75em;
+            padding-left: 3em;
+            padding-right: 3em;
+        }
+        
+        .about-text {
+            margin-top: -0.5em;
+        }
+        
+        .about-text h3 {
+            font-size: 24px;
+        }
+        
+        .about-text p {
+            font-size: 19px;
+        }
+        
+        .about-image img {
+            width: 60%;
+        }
+    }  
+        
+    @media only screen and (min-width: 500px) {
+        
+        .about-text {
+            padding-top: 0.5em;
+        }
+    }
+        
+    @media only screen and (max-width: 799px) {
+        
+        .image-text-container {
+            display: inline-block;
+            background-color: #e1e1e1;
+            border-radius: 2px;
+            padding: 0.25em 1em 0.25em 1em;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+            }
+        
+        #about-heading {
+            color: #ffffff;
+            background: -webkit-linear-gradient(right, #1db24b, #8dc63f); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, #1db24b, #8dc63f); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, #1db24b, #8dc63f); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, #1db24b , #8dc63f); /* Standard syntax */
+        }
+        
+        #about-heading h3 {
+            opacity: 1;
+        }
+        
+        }
+        
+    @media only screen and (min-width: 450px) and (max-width: 799px) {
+        
+        .image-grid {
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+         
+         .article-image {
+            display: inline-block;
+            float: left;
+            width: 100%;
+        }
+        
+        .article-section-text {
+            display: inline-block;
+            width: 100%;
+            padding-left: none;
+            margin-top: none;
+        }
+        
+        .article-section-title h3 {
+            margin-top: 140px;
+            opacity: 0.87;
+        }
+        
+        .article-section {
+            display: inline-block;
+            background-color: #fafafa;
+            padding: 1.5em;
+            margin: 0 0 1.5em;
+            width: calc(100%-1.5em);
+        }
+        
+        .content {
+            width: calc(100%-3em);
+            margin: 1.5em 1.5em 1.75em 1.5em;
+        }
+    } 
+        
+    @media only screen and (min-width: 650px) {
+            
+        .about-text {
+            padding-top: 2em;
+        }
+        
+        .about-text h3 {
+            font-size: 30px;
+        }
+        
+        .about-text p {
+            font-size: 24px;
+        }
+    }    
+        
+    @media only screen and (min-width: 800px) {
+        
+        .image-grid {
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+        
+        .about-text {
+            padding-top: 2em;
+        }
+        
+        .about-text h3 {
+            font-size: 30px;
+        }
+        
+        .about-text p {
+            font-size: 25px;
+        }
+        
+        .article-image {
+            display: inline-block;
+            float: left;
+            width: 45%;
+        }
+        
+        .article-section-text {
+            display: inline-block;
+            float: right;
+            width: 45%;
+            margin-left: 3em;
+            margin-top: none;
+        }
+        
+        .article-section {
+            display: inline-block;
+            background-color: #fafafa;
+            padding: 3em;
+            margin: 0 0 1.5em;
+            width: calc(100%-3em);
+        }
+        
+        .content {
+            margin: 1.5em 1.5em 3.1em 1.5em;
+        }
+        
+        .footer {
+            height: 55px;
+        }
+        
+        .footer-items p {
+            font-size: 15px;
+            margin: 15px 25px;
+            list-style:none;
+            z-index: 1;
+            font-weight: bolder;
+            padding-top: 3px;
+        }
+    }
+
+    @media only screen and (min-width: 900px) {
+       
+        .image-grid {
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            column-count: 3;
+        }
+        
+        .about {
+            color: #ffffff;
+            background: -webkit-linear-gradient(right, #58BF78, #1db24b, #1db24b,#58BF78); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, #58BF78, #1db24b, #1db24b,#58BF78); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, #58BF78, #1db24b, #1db24b,#58BF78); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(right, #58BF78, #1db24b, #1db24b,#58BF78); /* Standard syntax */
+        }
+        
+         .article-image {
+            display: inline-block;
+            float: left;
+            width: 45%;
+        }
+        
+        .article-section-text {
+            display: inline-block;
+            float: right;
+            width: 45%;
+            margin-left: 3em;
+            margin-top: none;
+        }
+        
+        .article-section {
+            display: inline-block;
+            background-color: #fafafa;
+            padding: 3em;
+            margin: 0 0 1.5em;
+            width: calc(100%-3em);
+        }
+    }
+
+    @media only screen and (min-width: 1100px) {
+        
+        .article-section {
+            display: inline-block;
+            background-color: #fafafa;
+            padding: 3em;
+            margin: 0 0 1.5em;
+            width: calc(100%-3em);
+        }
+        
+        .content {
+            max-width: 1180px;
+            width: calc(100%-3em);
+            margin: 1.5em 1.5em 3.5em 1.5em;
+        }
+        
+        .image-grid {
+            -moz-column-count: 4;
+            -webkit-column-count: 4;
+            column-count: 4;
+        }
+    }
+
+    @media only screen and (min-width: 1280px) {
+        
+        .content {
+            margin: 3em auto 3.5em auto;
+
+        }  
+          
+        .article-section {
+            margin: 0 0 3em;
+        }
+    d}
+        
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Portfolio",
+        "headline": "Cognitive Psychology",
+        "datePublished": "2016-25-06T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+      </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    
+    
+    
+    
+        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+
+  </head>
+    
+    <body>
+        
+        <div id="top" class="shadow">
+            
+            <ul class="nav">
+                
+                <li><a href="#">
+                        <span class="span-logo"><img src="Asset%2010.png" border="0"/></span>
+                    </a>
+                </li>
+                <li><a href="index.html">About</a></li>
+                
+                <li><a href="blog.html">Blog</a></li>
+                
+                <li><a href="#portfolio">Portfolio</a></li>
+                
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+            
+        </div>
+        
+        <div class="heading">
+            
+                <h1>81st Ave. Library</h1>
+            
+                <div class="about">
+
+                    <div class="about-content">
+                    
+                        <div class="about-text">
+                            <h3 class="subtitle">A more useable space.</h3>
+
+                        
+                            <p>Print, architecture, in-depth interviews, usability research, ethnographic research.</p>
+                            
+                        </div>
+                        
+                        <div class="about-image">
+                        
+                            <img src="Activbite_Overview-Max-1240x2231.png"/>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            
+        </div>
+        
+        <div class="content">
+            
+            <div class="article-content">
+                    
+                    <div class="article-section">
+                          <h2 class="article-section-title">Overview</h2>
+                                                        
+                            <p>Solidarity pairs with a fitness tracker or smartwatch to provide lifestyle data trends to mental health professionals for the diagnosis and treatment of their patients — providing insight into how everyday routines might affect mental well-being.</p>
+                            
+                            <h2>Tools</h2>
+                            
+                            <p>Photoshop, Illustrator, PowerPoint, Balsamiq, SurveyMonkey, and personal interviews.</p>
+                        
+                            <h2>Deliverables</h2>
+                            
+                            <ul>
+                                <li>Competitive Analysis</li>
+                                <li>personas</li>
+                                <li>sketches</li> <li>presentation pitch deck</li> 
+                                <li>use cases</li>
+                                <li>wireframes</li> 
+                                <li>high-fidelity mockups</li>
+                                <li>working prototype</li>
+                            </ul>
+                            
+                            <h2>Introduction</h2>
+                        
+                        <h2 class="article-section-title">Overview</h2>
+            
+                        <div class="article-image"  class="image-right">
+                
+                            <div class="image-inner">
+                
+                                <img src="Solidarity_Desk-Overview_Max-1240x827.png" on="tap:my-lightbox1"/>
+            
+                            </div>
+                            
+                            <div id="about-heading" class="image-text-container">
+                
+                            <div class="image-title">
+                    
+                                <h3 class="article-section-title">Textbox content.</h3>
+            
+                            </div>
+
+                            <amp-lightbox id="my-lightbox1" on="tap:my-lightbox1.close" layout="nodisplay">
+  
+                                <div class="lightbox">
+    
+                                    <img src="Solidarity_Desk-Overview_Max-1240x827.png" width=1240 height=827 layout="responsive"  role="img" tabindex="1">
+  
+                                    </img>
+    
+                                </div>
+
+                            </amp-lightbox> 
+                            
+                            <div class="image-textbox">
+                    
+                                <p>This is a sample of text that will appear in this box. Any other text will appear in the case study when you click "read more."</p>
+            
+                            </div>
+                            
+                            </div>
+                                
+                        </div>
+                                    
+                        <div class="article-section-text">
+                            
+                            <h3>Problem</h3>
+                            
+                            <p>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</p> 
+                        
+                        </div>
+        
+                    </div>
+                    
+                    <div class="article-section">
+            
+                        <div class="article-image"  class="image-right">
+                
+                            <div class="image-inner">
+                
+                                <img src="coCuts_location%20icon%20portfolio-01.png" on="tap:my-lightbox1"/>
+            
+                            </div>
+                            
+                            <div class="image-text-container">
+                
+                            <div class="image-title">
+                    
+                                <h3 class="article-section-title">Textbox content.</h3>
+            
+                            </div>
+
+                            <amp-lightbox id="my-lightbox1" on="tap:my-lightbox1.close" layout="nodisplay">
+  
+                                <div class="lightbox">
+    
+                                    <img src="coCuts_location%20icon%20portfolio-01.png" width=500 height=500 layout="responsive"  role="img" tabindex="1">
+  
+                                    </img>
+    
+                                </div>
+
+                            </amp-lightbox> 
+                            
+                            <div class="image-textbox">
+                    
+                                <p>This is a sample of text that will appear in this box. Any other text will appear in the case study when you click "read more."</p>
+            
+                            </div>
+                            
+                            </div>
+                                
+                        </div>
+                                    
+                        <div class="article-section-text">
+                            
+                            <h2 class="article-section-title">Article Section Title</h2>
+                            
+                            <h3>Problem</h3>
+                            
+                            <p>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</p> 
+                            
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        
+                        </div>
+        
+                    </div>
+  
+            </div>
+            
+                <div class="article-content">
+                    
+                    <div class="article-section">
+            
+                        <div class="article-image"  class="image-right">
+                
+                            <div class="image-inner">
+                
+                                <img src="coCuts_location%20icon%20portfolio-01.png" on="tap:my-lightbox1"/>
+            
+                            </div>
+                            
+                            <div class="image-text-container">
+                
+                            <div class="image-title">
+                    
+                                <h3 class="article-section-title">Textbox content.</h3>
+            
+                            </div>
+
+                            <amp-lightbox id="my-lightbox1" on="tap:my-lightbox1.close" layout="nodisplay">
+  
+                                <div class="lightbox">
+    
+                                    <img src="coCuts_location%20icon%20portfolio-01.png" width=500 height=500 layout="responsive"  role="img" tabindex="1">
+  
+                                    </img>
+    
+                                </div>
+
+                            </amp-lightbox> 
+                            
+                            <div class="image-textbox">
+                    
+                                <p>This is a sample of text that will appear in this box. Any other text will appear in the case study when you click "read more."</p>
+            
+                            </div>
+                            
+                            </div>
+                                
+                        </div>
+                                    
+                        <div class="article-section-text">
+                            
+                            <h2 class="article-section-title">Article Section Title</h2>
+                            
+                            <h3>Problem</h3>
+                            
+                            <p>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</p> 
+                            
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        
+                        </div>
+        
+                    </div>
+                    
+                    <div class="article-section">
+            
+                        <div class="article-image"  class="image-right">
+                
+                            <div class="image-inner">
+                
+                                <img src="coCuts_location%20icon%20portfolio-01.png" on="tap:my-lightbox1"/>
+            
+                            </div>
+                            
+                            <div class="image-text-container">
+                
+                            <div class="image-title">
+                    
+                                <h3 class="article-section-title">Textbox content.</h3>
+            
+                            </div>
+
+                            <amp-lightbox id="my-lightbox1" on="tap:my-lightbox1.close" layout="nodisplay">
+  
+                                <div class="lightbox">
+    
+                                    <img src="coCuts_location%20icon%20portfolio-01.png" width=500 height=500 layout="responsive"  role="img" tabindex="1">
+  
+                                    </img>
+    
+                                </div>
+
+                            </amp-lightbox> 
+                            
+                            <div class="image-textbox">
+                    
+                                <p>This is a sample of text that will appear in this box. Any other text will appear in the case study when you click "read more."</p>
+            
+                            </div>
+                            
+                            </div>
+                                
+                        </div>
+                                    
+                        <div class="article-section-text">
+                            
+                            <h2 class="article-section-title">Article Section Title</h2>
+                            
+                            <h3>Problem</h3>
+                            
+                            <p>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</p> 
+                            
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        
+                        </div>
+        
+                    </div>
+  
+            </div>
+   
+        </div>
+ 
+    </body>
+    
+    <footer class="footer">
+        
+        <div class="footer-items">
+            
+            <div class="footer-left">
+                
+                <p><a href="index.html">◀ Previous Item</a></p>
+                
+            </div>
+            
+            <div class="footer-right">
+            
+                <p><a href="index.html">Next Item ▶</a></p>
+            
+            </div>
+            
+        </div>
+    
+    </footer>
+
+</html>
